@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Buzzr</string>
+    <string name="chat_api_key">d3b053e4497fd4cada7de41bc8b231b2</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="wrong">Something went wrong, Please try again latter.</string>
+    <string name="all_required">All field required.</string>
+    <string name="password_mismatch">Password not match.</string>
+    <string name="invalid_email">Enter valid email address.</string>
+    <string name="invalid_number">Enter valid mobile number.</string>
+    <string name="no_internet">No internet connectivity, Please connect to your network.</string>
+    <string name="alert">Alert!</string>
+
+    <string name="camera_permission_confirmation">This app demonstrates the usage of CameraView. In order to do that, it needs permission to access camera.</string>
+    <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
+    <string name="picture_taken">Picture taken</string>
+    <string name="aspect_ratio">Aspect ratio</string>
+    <string name="switch_flash">Switch flash</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_on">Flash on</string>
+
+    <string name="sign_up">Not yet Registered ? <font color='white'> Sign Up Now</font></string>
+    <string name="registered">Already Registered?  <font color='white'> Login</font></string>
+
+
+    <string name="text_groups">Inbox</string>
+    <string name="text_setting">Settings</string>
+    <string name="text_my_to_do">My To Do</string>
+    <string name="text_my_history">History</string>
+    <string name="text_contact">Contact</string>
+    <string name="text_history">History</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="invite">Invite</string>
+
+    <string name="new_message_notification_title_template">New message: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="new_message_notification_placeholder_text_template">You said %1$s and lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel
+        semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
+        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
+        tortor.
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+
+
+    <!--permissions message-->
+    <string name="contact_permission_rejected_msg">Need contact permission to use this feature.</string>
+
+</resources>

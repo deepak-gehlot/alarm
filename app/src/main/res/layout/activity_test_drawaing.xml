@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <rudiment.alaramapp.AnnotationView
+        android:id="@+id/AnnotationView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/blackButton"
+        android:background="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="undo"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/redoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/undoButton"
+        android:onClick="redo"
+        android:text="Redo" />
+
+    <Button
+        android:id="@+id/blackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/undoButton"
+        android:layout_alignParentLeft="true"
+        android:onClick="blackColor"
+        android:text="Black" />
+
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/redoButton"
+        android:layout_toRightOf="@+id/blackButton"
+        android:onClick="redColor"
+        android:text="Red" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/redButton"
+        android:onClick="clear"
+        android:text="Clear" />
+
+    <SeekBar
+        android:id="@+id/widthSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/clearButton"
+        android:max="9"
+        android:progress="4" />
+
+    <TextView
+        android:id="@+id/widthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clearButton"
+        android:layout_alignLeft="@+id/widthSeekBar"
+        android:text="Width: 5" />
+
+</RelativeLayout>

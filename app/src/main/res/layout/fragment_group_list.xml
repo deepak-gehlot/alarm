@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:clickable="true"
+    tools:context="rudiment.alaramapp.fragment.inbox.GroupListFragment">
+
+    <TextView
+        android:id="@+id/createNewGroupTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/create_group_icon"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Create New Group"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/createNewGroupTxt"
+        android:background="@color/gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/groupList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dividerView" />
+
+</RelativeLayout>

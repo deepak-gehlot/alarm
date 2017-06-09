@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
+    tools:context="rudiment.alaramapp.activity.RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/nameEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/border_edt"
+                android:hint="Name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:nextFocusDown="@+id/emailEdt"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_dark" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:id="@+id/emailEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_edt"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:nextFocusDown="@+id/phoneEdt"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_dark" />
+
+
+            <EditText
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:id="@+id/phoneEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_edt"
+                android:hint="Phone"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:lines="1"
+                android:nextFocusDown="@+id/passwordEdt"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_dark" />
+
+            <EditText
+                android:id="@+id/passwordEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_edt"
+                android:hint="Password"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:nextFocusDown="@+id/confirmPasswordEdt"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_dark" />
+
+            <EditText
+                android:id="@+id/confirmPasswordEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_edt"
+                android:hint="Confirm Password"
+                android:imeOptions="actionSend"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_dark" />
+
+            <Button
+                android:id="@+id/registrationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Register"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/loginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/registered"
+                    android:textColor="@color/text_dark" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

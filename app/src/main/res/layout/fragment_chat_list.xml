@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:clickable="true"
+    tools:context="rudiment.alaramapp.fragment.inbox.ChatListFragment">
+
+    <TextView
+        android:id="@+id/startNewChatTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/start_new_chat"
+        android:gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:padding="16dp"
+        android:text="Start New Chat"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+         />
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/startNewChatTxt"
+        android:background="@color/gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friendList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dividerView"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+</RelativeLayout>

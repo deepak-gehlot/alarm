@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sticker_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rudiment.alaramapp.fragment.StickerFragment">
+
+    <RelativeLayout
+        android:id="@+id/sticker_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <!-- custom, maybe you will like to put an ImageView-->
+        <ImageView
+            android:id="@+id/takenImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile"
+            android:scaleType="fitXY"/>
+
+
+        <RelativeLayout
+            android:id="@+id/sticker_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#6b000000"
+                android:padding="5dp"
+                android:textCursorDrawable="@null"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/view_drawing_pad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:id="@+id/sticker_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomPanel"
+            android:layout_below="@+id/topPanel"
+            android:layout_gravity="center" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/menuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_menu_black_24dp"
+        app:backgroundTint="@color/error_color"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:rippleColor="@color/blue" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/typeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/menuBtn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_title_black_24dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/error_color"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:rippleColor="@color/blue" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/drawBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/typeBtn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_edit_black_24dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/error_color"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:rippleColor="@color/blue" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/undoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/drawBtn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_undo_black_24dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/error_color"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:rippleColor="@color/blue" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/redoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/undoBtn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_redo_black_24dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/error_color"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:rippleColor="@color/blue" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/colorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/redoBtn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_color_lens_black_24dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/error_color"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:rippleColor="@color/blue" />
+
+</RelativeLayout>

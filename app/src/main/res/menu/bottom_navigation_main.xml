@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_groups"
+        android:enabled="true"
+        android:icon="@drawable/group"
+        android:title="@string/text_groups"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:icon="@drawable/setting"
+        android:title="@string/text_setting"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_mytodo"
+        android:enabled="true"
+        android:icon="@drawable/to_do"
+        android:title="@string/text_my_to_do"
+        app:showAsAction="always" />
+  <!--  <item
+        android:id="@+id/action_contact"
+        android:enabled="true"
+        android:icon="@drawable/contact"
+        android:title="@string/text_contact"
+        app:showAsAction="always" />-->
+</menu>
